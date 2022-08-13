@@ -45,6 +45,6 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions))
-app.listen(port,()=>{
+app.listen(process.env.PORT || port,()=>{
     console.log("server starts at port no :" + port);
 })
